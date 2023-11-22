@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import DropdownMenu from '../ui/dropdown'
-import Searchinput from '../ui/searchinput'
+import DropdownMenu from '../forms/dropdown'
+import Searchinput from '../forms/searchinput'
 import Button from '../ui/Button'
 function Header() {
     return (
-        <div className='w-full'>
+        <div className='w-full bg-white'>
             <div className='max-w-[1600px] mx-auto grid grid-cols-9 gap-4 p-4'>
                 <Image src={'/logos/mainlogo.png'} width={110} height={110} sizes='100vw' className='' />
                 <DropdownMenu title={'Country'} className={'rounded-full'} />

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-const Dropdown = ({ title, className, drophover, options, onChange, error }) => {
+const Dropdown = ({ title, className, drophover, options, onChange, error, styleButton }) => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const toggleDropdown = () => {
         setDropdownOpen(!isDropdownOpen);
@@ -34,7 +34,7 @@ const Dropdown = ({ title, className, drophover, options, onChange, error }) => 
             <button
                 id="dropdownDefaultButton"
                 data-dropdown-toggle="dropdown"
-                className={`rounded-full bg-white text-gray-500 font-semibold justify-between w-full text-sm px-4 py-2.5 text-center inline-flex items-center`}
+                className={`rounded-full bg-white text-gray-500 font-semibold justify-between w-full text-sm px-4 py-2.5 text-center inline-flex items-center ${styleButton}`}
                 type="button"
             >
                 {selectedOption ? selectedOption : title}

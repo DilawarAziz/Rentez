@@ -21,28 +21,29 @@ function Footer() {
                         <div className=' footer-col flex flex-col space-y-6  text-sm'>
                             <h1 className='  font-bold text-md    text-lg' >Quick Links</h1>
                             <p>Become a Seller </p>
-                            <p>About us</p>
-                            <Link href='/about'> Pricing </Link>
-                            <Link href='/tradedetail'>Categories</Link>
+                            <Link href='/aboutus'> About us</Link>
+                            <Link href='/addsdetail'> Pricing </Link>
+                            <Link href='/subcategories'>Categories</Link>
                         </div>
                         <div className=' footer-col flex flex-col space-y-6  text-sm'>
                             <h1 className='  font-bold text-md    text-lg' >Categories</h1>
                             <p>Featured Listings </p>
                             <p>Top Listings</p>
-                            <Link href='/about'> Fresh Recommendations</Link>
+                            <Link href='/profile'> Fresh Recommendations</Link>
                             <Link href='/tradedetail'>Finance</Link>
                             <p>Contact</p>
                         </div>
                         <div className='footer-col flex flex-col space-y-6  text-sm'>
                             <h1 className='font-bold text-md    text-lg' >Support</h1>
                             <Link href={'/tradelisting'}>How it Works </Link>
-                            <p>FAQs
-                            </p>
-                            <p> Terms & Conditions
-                            </p>
-                            <Link href={'/escrewsystem'}>Privacy Policy</Link>
-                            <Link href={'/testimonials'}>Contact Us</Link >
-                            <Link href={'/testimonials'}>Careers</Link >
+                            <Link href={'/faqs'}>
+                                FAQs
+                            </Link>
+                            <Link href={'/termsandconditions'}>Terms & Conditions</Link>
+
+                            <Link href={'/privacy-policy'}>Privacy Policy</Link>
+                            <Link href={'/contactus'}>Contact Us</Link >
+                            <Link href={'/termsandconditions'}>Careers</Link >
                         </div>
                         <div className=' footer-col flex flex-col space-y-  text-sm'>
                             <h1 className='font-bold text-md    text-lg ' >Email</h1>
@@ -102,13 +103,13 @@ function Footer() {
                         }
                     </div>
                 </div>
-            </div>
+            </div >
 
 
         </>
     )
 }
-    
+
 
 
 
