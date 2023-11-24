@@ -16,14 +16,14 @@ function SubCategories() {
     return (
         <main className='bg-[#000000] bg-opacity-5'>
             <Header />
-            <div className='max-w-screen-xl mx-auto py-8'>
+            <div className='max-w-screen-xl mx-auto py-8 px-4 xl:px-0'>
                 <CardsHeading heading={'Categories '} />
-                <div className='flex justify-between '>
+                <div className='grid lg:grid-cols-6 grid-cols-2 sm:grid-cols-3 gap-4 justify-between '>
                     {[3, 5, 6, 7, 3, 89].map(() => (
                         <CategoriesCard />
                     ))}
                 </div>
-                <div className='flex  gap-4 mt-12'>
+                <div className='flex flex-wrap  gap-4 mt-12'>
                     {['Hardware Items', 'Item name1', 'Item Name 2', 'Item Name 2'].map((items, index) => (
                         <div key={index} className='border border-gray-200 py-2 px-4 rounded-full'>
                             <p className='hover:text-orange  font-semibold cursor-pointer'>
@@ -34,11 +34,11 @@ function SubCategories() {
                 </div>
             </div>
             <div className='w-full bg-white py-12'>
-                <div className='max-w-screen-xl mx-auto py-8 grid grid-cols-8 gap-6 '>
+                <div className='max-w-screen-xl mx-auto py-8 flex flex-col md:grid grid-cols-8 gap-6 px-4 xl:px-0'>
                     <div className='col-span-2 space-y-6'>
                         <div>
                             <hr className='border border-gray-200' />
-                            <Dropdown title={'Locations'} className={'border-none w-full my-2'} styleButton={'px-0 text-xl !text-black !font-bold'} />
+                            <Dropdown title={'Locations'} className={'border-none w-full my-2'} styleButton={'!px-0 text-xl !text-black !font-bold'} />
                             {["Ireland", "England", "Italy", "Greece", "France"].map((items, index) => (
                                 <Checkbox key={index} title={items} />
                             ))}
@@ -46,7 +46,7 @@ function SubCategories() {
                         </div>
                         <div className=''>
                             <hr className='border border-gray-200' />
-                            <Dropdown title={'City'} className={'border-none w-full my-2'} styleButton={'px-0 text-xl !text-black !font-bold'} />
+                            <Dropdown title={'City'} className={'border-none w-full my-2'} styleButton={'!px-0 text-xl !text-black !font-bold'} />
                             {["Ireland", "England", "Italy",].map((items, index) => (
                                 <Checkbox key={index} title={items} />
                             ))}
@@ -54,7 +54,7 @@ function SubCategories() {
                         </div>
                         <div className=''>
                             <hr className='border border-gray-200' />
-                            <Dropdown title={'Document Required'} className={'border-none w-full my-2'} styleButton={'px-0 text-xl !text-black !font-bold'} />
+                            <Dropdown title={'Document Required'} className={'border-none w-full my-2'} styleButton={'!px-0 text-xl !text-black !font-bold'} />
                             {["Yes", "No"].map((items, index) => (
                                 <Checkbox key={index} title={items} />
                             ))}
@@ -62,7 +62,7 @@ function SubCategories() {
                         </div>
                         <div className=''>
                             <hr className='border border-gray-200' />
-                            <Dropdown title={'Budget'} className={'border-none w-full my-2'} styleButton={'px-0 text-xl !text-black !font-bold'} />
+                            <Dropdown title={'Budget'} className={'border-none w-full my-2'} styleButton={'!px-0 text-xl !text-black !font-bold'} />
                             <div className='border border-gray-200 py-2 px-4 my-4 rounded-full'>
                                 <p className='   cursor-pointer'>
                                     AED {value}
@@ -78,17 +78,17 @@ function SubCategories() {
                                     AED 100,000
                                 </p>
                             </div>
-                            <Dropdown title={'Categories'} className={'border-none w-full my-2'} styleButton={'px-0 text-xl !text-black !font-bold'} />
+                            <Dropdown title={'Categories'} className={'border-none   w-full my-2'} styleButton={'!px-0   text-xl !text-black !font-bold'} />
                             <hr className='border border-gray-200 ' />
-                            <Dropdown title={'Language'} className={'border-none w-full my-2'} styleButton={'px-0 text-xl !text-black !font-bold'} />
+                            <Dropdown title={'Language'} className={'border-none w-full my-2'} styleButton={'!px-0 text-xl !text-black !font-bold'} />
                             <hr className='border border-gray-200 ' />
-                            <Dropdown title={'Duration'} className={'border-none w-full my-2'} styleButton={'px-0 text-xl !text-black !font-bold'} />
+                            <Dropdown title={'Duration'} className={'border-none w-full my-2'} styleButton={'!px-0 text-xl !text-black !font-bold'} />
 
                         </div>
                     </div>
 
                     <div className='col-span-6'>
-                        <div className='flex justify-between items-center '>
+                        <div className='flex flex-col sm:flex-row justify-between sm:items-center '>
                             <p>
                                 254 Results
                             </p>

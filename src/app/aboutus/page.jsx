@@ -3,6 +3,7 @@ import Header from '@/components/header/header'
 import React from 'react'
 import Image from 'next/image'
 import AboutUsCard from '@/components/cards/aboutusCard'
+import Heading from '@/components/ui/Heading'
 function Aboutus() {
     return (
         <main className=''>
@@ -10,17 +11,17 @@ function Aboutus() {
             <div className='relative'>
                 <Image src={'/images/Mask group (1).png'} width={0} height={0} sizes='100vw' className='w-full' />
                 <div className=' absolute top-[50%] left-[45%] '>
-                    <h1 className='text-4xl font-bold'>
+                    <Heading type={'heading'} className=''>
                         About Us
-                    </h1>
+                    </Heading>
                 </div>
             </div>
-            <div className='max-w-screen-xl mx-auto py-8 grid grid-cols-2 gap-14'>
+            <div className='max-w-screen-xl mx-auto py-8 grid md:grid-cols-2 grid-cols-1 gap-14 p-4 xl:p-0'>
                 <div className='flex flex-col justify-center gap-8'>
                     <h1 className='text-3xl font-bold'>
                         About Rent EZ
                     </h1>
-                    <p>
+                    <p className='text-sm md:text-title-xsm'>
                         Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                         fugiat pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -28,7 +29,7 @@ function Aboutus() {
                         amet, consectetur adipiscing elit.
 
                     </p>
-                    <p>
+                    <p className='text-sm md:text-title-xsm'>
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -48,11 +49,11 @@ function Aboutus() {
             <div className='bg-orange bg-opacity-10  py-12'>
                 <div className='max-w-screen-xl mx-auto my-20 '>
                     <div className='flex items-center justify-center'>
-                        <h1 className='text-2xl font-bold mb-10'>
+                        <Heading type={"subheading"} className='text-2xl font-bold mb-10'>
                             Why Us
-                        </h1>
+                        </Heading>
                     </div>
-                    <div className='grid grid-cols-3 gap-4'>
+                    <div className='grid sm:grid-cols-3 grid-cols-1 gap-4'>
                         {[3, 5, 7,].map(() => (
                             <AboutUsCard className={'bg-'} />
                         ))}

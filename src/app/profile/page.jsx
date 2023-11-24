@@ -7,7 +7,7 @@ function Page() {
     return (
         <main>
             <Header />
-            <div className='max-w-screen-xl mx-auto py-16 grid grid-cols-3'>
+            <div className='max-w-screen-xl mx-auto py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 xl:p-0'>
                 <div>
                     <div className="flex items-center gap-6">
                         <div className="inline-flex items-center mr-3 text-sm text-gray-900  font-semibold">

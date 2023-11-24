@@ -14,11 +14,11 @@ const Heading = ({ type, children, className }) => {
         case 6:
             return <h6 className={'text-base font-medium'}>{children}</h6>;
         case 'heading':
-            return <h1 className={` xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl font-bold uppercase ${className}`}>{children}</h1>;
+            return <h1 className={` xl:text-5xl lg:text-4xl md:text-3xl text-2xl  font-bold  ${className}`}>{children}</h1>;
         case 'subheading':
-            return <h2 className={`  lg:text-2xl md:text-xl sm:text-lg text-md font-bold uppercase ${className}`}>{children}</h2>;
+            return <h2 className={`  lg:text-2xl text-xl   font-bold  ${className}`}>{children}</h2>;
         case 'paragraph':
-            return <p className={`lg:text-xl opacity-50 md:text-base text-sm  ${className}`}>{children}</p>;
+            return <p className={`lg:text-xl md:text-base text-sm  ${className}`}>{children}</p>;
 
         default:
             return <Heading type={1}>{children}</Heading>;

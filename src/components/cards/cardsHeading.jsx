@@ -1,14 +1,15 @@
 import React from 'react'
+import Heading from '../ui/Heading'
 
 function CardsHeading({ heading, link }) {
     return (
         <div className='flex items-center justify-between mb-4'>
-            <h1 className='text-3xl font-bold'>
+            <Heading type={'subheading'} className='lg:text-3xl '>
                 {heading}
-            </h1>
-            <p className='text-orange font-semibold cursor-pointer'>
+            </Heading>
+            <Heading type={'paragraph'} className='text-orange  cursor-pointer'>
                 {link}
-            </p>
+            </Heading>
         </div>
     )
 }

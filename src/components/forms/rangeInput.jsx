@@ -1,4 +1,4 @@
-
+'use client'
 const InputSlider = ({ value, setValue }) => {
 
     return (

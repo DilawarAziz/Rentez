@@ -22,14 +22,14 @@ const ContactUsSection = () => {
             <div className="py-4  px-4 mx-auto ">
                 <div className='text-center'>
                     <h2 className="mb-4 md:text-xl text-lg lg:text-4xl tracking-tight font-extrabold text-center text-gray-900 ">Get In Touch</h2>
-                    <p className='text-gray-500'>
+                    <p className='text-gray-500 text-sm md:text-title-xsm'>
                         Please fill in the following details and wait for our response.
                     </p>
                 </div>
 
                 <form onSubmit={handleSubmit(handleSignup)} className="mt-8 space-y-6" >
-                    <div className="flex gap-4 items-center w-full">
-                        <div className='w-[50%]'>
+                    <div className="grid  sm:grid-cols-2 grid-cols-1 sm:flex-row gap-4 items-center w-full">
+                        <div className=''>
                             <TextFeild
                                 name={'firstname'}
                                 inputType={"text"}
@@ -41,7 +41,7 @@ const ContactUsSection = () => {
                                 error={errors?.firstname?.message}
                             />
                         </div>
-                        <div className='w-[50%]'>
+                        <div className=''>
                             <TextFeild
                                 name={'lastname'}
                                 inputType={"text"}
@@ -54,8 +54,8 @@ const ContactUsSection = () => {
                             />
                         </div>
                     </div>
-                    <div className="flex gap-4 items-center w-full">
-                        <div className='w-[50%]'>
+                    <div className="grid  sm:grid-cols-2 grid-cols-1 gap-4 items-center w-full">
+                        <div className=''>
                             <TextFeild
                                 name={'firstname'}
                                 inputType={"text"}
@@ -67,7 +67,7 @@ const ContactUsSection = () => {
                                 error={errors?.firstname?.message}
                             />
                         </div>
-                        <div className='w-[50%]'>
+                        <div className=''>
                             <TextFeild
                                 name={'lastname'}
                                 inputType={"text"}

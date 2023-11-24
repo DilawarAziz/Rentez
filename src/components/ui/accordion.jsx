@@ -16,7 +16,7 @@ const AccordionItem = ({ title, content, index }) => {
                     aria-expanded={isExpanded}
                     aria-controls={`accordion-flush-body-${index}`}
                 >
-                    <span className="font-bold text-xl ">{title}</span>
+                    <span className="font-bold text-sm sm:text-lg md:text-xl ">{title}</span>
                     <svg
                         data-accordion-icon
                         className={`w-3 h-3 rotate-180 shrink-0 ${isExpanded ? 'rotate-0' : ''}`}

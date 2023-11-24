@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Checkbox = ({ title }) => {
+const Checkbox = ({ title, className }) => {
     return (
-        <div className="flex items-center mb-4">
+        <div className={`flex items-center mb-4 `}>
             <input
                 id="default-checkbox"
                 type="checkbox"
                 value=""
-                className="w-4 h-4 text-orange bg-orange border-gray-300 rounded "
+                className={`w-4 h-4 text-orange bg-orange border-gray-300 rounded ${className}`}
             />
             <label
                 htmlFor="default-checkbox"

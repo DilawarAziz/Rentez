@@ -6,36 +6,26 @@ function Footer() {
         <>
             <div className='!text-black bg-[#000000] bg-opacity-5 p-4 gap-2 px-8 py-16  xl:!px-0  '>
                 <div className='max-w-screen-xl mx-auto flex flex-col justify-between items-center'>
-                    <div className='grid md:grid-cols-5 grid-cols-2 gap-2 it w-full'>
-
+                    <div className='sm:grid space-y-8 sm:space-y-0 md:grid-cols-5 grid-cols-2 gap-2 it w-full'>
                         <div className=''>
-                            <Image src={'/logos/mainlogo.png'} width={0} height={0} className={'w-full pr-6'} sizes='100vw' alt='login' />
-                            {/* <div className='flex gap-4 mt-6'>
-
-                            <Image src={'/logos/insta.svg'} width={20} height={20} alt='login' />
-                            <Image src={'/logos/insta.svg'} width={20} height={20} alt='login' />
-                            <Image src={'/logos/insta.svg'} width={20} height={20} alt='login' />
-                            <Image src={'/logos/insta.svg'} width={20} height={20} alt='login' />
-                        </div> */}
+                            <Image src={'/logos/mainlogo.png'} width={0} height={0} className={'w-[200px] sm:w-full pr-6'} sizes='100vw' alt='login' />
                         </div>
-                        <div className=' footer-col flex flex-col space-y-6  text-sm'>
+                        <div className=' footer-col flex flex-col  space-y-6  text-sm'>
                             <h1 className='  font-bold text-md    text-lg' >Quick Links</h1>
-                            <p>Become a Seller </p>
+                            <Link href='/zbackend/chatlist'>Become a Seller</Link>
                             <Link href='/aboutus'> About us</Link>
-                            <Link href='/addsdetail'> Pricing </Link>
+                            <Link href='/zbackend/pricing'> Pricing </Link>
                             <Link href='/subcategories'>Categories</Link>
                         </div>
-                        <div className=' footer-col flex flex-col space-y-6  text-sm'>
+                        <div className=' footer-col  flex flex-col space-y-6  text-sm'>
                             <h1 className='  font-bold text-md    text-lg' >Categories</h1>
-                            <p>Featured Listings </p>
-                            <p>Top Listings</p>
+                            <Link href='/zbackend/login'>Featured Listings </Link>
+                            <Link href='/zbackend/createorder/account'>Top Listings</Link>
                             <Link href='/profile'> Fresh Recommendations</Link>
-                            <Link href='/tradedetail'>Finance</Link>
-                            <p>Contact</p>
                         </div>
                         <div className='footer-col flex flex-col space-y-6  text-sm'>
                             <h1 className='font-bold text-md    text-lg' >Support</h1>
-                            <Link href={'/tradelisting'}>How it Works </Link>
+                            <Link href={'/addsdetail'}>How it Works </Link>
                             <Link href={'/faqs'}>
                                 FAQs
                             </Link>
@@ -43,7 +33,7 @@ function Footer() {
 
                             <Link href={'/privacy-policy'}>Privacy Policy</Link>
                             <Link href={'/contactus'}>Contact Us</Link >
-                            <Link href={'/termsandconditions'}>Careers</Link >
+                            <Link href={'/zbackend/listing'}>Careers</Link >
                         </div>
                         <div className=' footer-col flex flex-col space-y-  text-sm'>
                             <h1 className='font-bold text-md    text-lg ' >Email</h1>
@@ -54,9 +44,8 @@ function Footer() {
                             <p>Elementum eleifend purus egestas. </p>
                         </div>
                     </div>
-                    <div className='w-full space-y-10   mt-20 mb-10'>
-
-                        <div className='flex justify-between space-y-10 md:space-y-0 w-[70%] ml-auto items-center flex-col md:flex-row'>
+                    <div className='w-full space-y-10    mt-20 mb-10'>
+                        <div className='flex justify-between space-y-10 md:space-y-0 w-full sm:w-[70%] md:ml-auto items-start md:items-center flex-col md:flex-row'>
                             <div>
                                 <h1 className='font-bold text-md    text-lg mt-4' >
                                     Subscribe Now
@@ -65,7 +54,7 @@ function Footer() {
                                     Subscribe  now to get regular updates.
                                 </p>
                             </div>
-                            <form className='w-[50%] '>
+                            <form className='w-full md:w-[50%] '>
                                 <label htmlFor="search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:">
                                     Search
                                 </label>
@@ -89,12 +78,11 @@ function Footer() {
                     </div>
                 </div>
                 <hr className='border-t-2 border-gray-200' />
-                <div className='max-w-screen-xl mx-auto flex items-center justify-between  mt-6'>
+                <div className='max-w-screen-xl mx-auto flex-col sm:flex-row flex items-center justify-between  mt-6'>
                     <h1>
                         Copyright 2023, All rights reserved.
                     </h1>
                     <div className='flex gap-4'>
-
                         {[1, 4, 5, 6].map(() => (
                             <div className='bg-white p-3 rounded-full'>
                                 <Image src={'/logos/x.svg'} sizes='100vw' width={20} height={20} className='' />

@@ -7,6 +7,7 @@ import Header from '@/components/header/header'
 import Testominalcarosal from '@/components/testominalcarosal'
 import Searchinput from '@/components/forms/searchinput'
 import Image from 'next/image'
+import Heading from '@/components/ui/Heading'
 
 export default function Home() {
   return (
@@ -33,29 +34,29 @@ export default function Home() {
         </div>
         <div className='bg-[#000000] bg-opacity-5'>
 
-          <div className='max-w-screen-xl mx-auto my-10 p-6'>
+          <div className='max-w-screen-xl mx-auto my-10 p-4 xl:p-0'>
             <CardsHeading heading={"Categories"} link={"View"} />
             <div>
             </div>
-            <div className='flex justify-between '>
+            <div className='grid lg:grid-cols-6 grid-cols-2 sm:grid-cols-3 gap-4 justify-between '>
               {[3, 5, 6, 7, 3, 89].map(() => (
                 <CategoriesCard />
               ))}
             </div>
           </div>
         </div>
-        <div className='max-w-screen-xl mx-auto my-20 p-6'>
+        <div className='max-w-screen-xl mx-auto my-20 p-4 xl:p-0'>
           <CardsHeading heading={"Categories"} link={"View"} />
-          <div className='grid grid-cols-4 gap-4'>
+          <div className='grid lg:grid-cols-4  grid-cols-2 gap-4'>
             {[3, 5, 6, 7,].map(() => (
               <ProductCard />
             ))}
           </div>
         </div>
         <div className='bg-[#000000] bg-opacity-5'>
-          <div className='max-w-screen-xl mx-auto my-20 p-6'>
+          <div className='max-w-screen-xl mx-auto my-20 p-4 xl:p-0'>
             <CardsHeading heading={"Featured Listings"} link={"View"} />
-            <div className='grid grid-cols-4 gap-4'>
+            <div className='grid lg:grid-cols-4 grid-cols-2 gap-4'>
               {[3, 5, 6, 4, 6, 6, 7, 7, 4, 3, 2, 7,].map(() => (
                 <ProductCard />
               ))}
@@ -64,11 +65,11 @@ export default function Home() {
         </div>
         <div className='max-w-screen-xl mx-auto my-20 '>
           <div className='flex items-center justify-center'>
-            <h1 className='text-2xl font-bold mb-10'>
+            <Heading type={"subheading"} className='text-2xl font-bold mb-10'>
               Why Us
-            </h1>
+            </Heading>
           </div>
-          <div className='grid grid-cols-3 gap-4'>
+          <div className='grid sm:grid-cols-3 grid-cols-1 gap-4'>
             {[3, 5, 7,].map(() => (
               <AboutUsCard />
             ))}
