@@ -56,7 +56,7 @@ const Page = () => {
                                 placeholder={'**************'}
                                 error={errors?.password?.message}
                             />
-                            <Link href={'/zbackend/signup'} className="cursor-pointer block text-sm  text-end text-gray-500 hover:text-blue-500">
+                            <Link href={'#'} className="cursor-pointer block text-sm  text-end text-gray-500 hover:text-blue-500">
                                 Forgot Password?
                             </Link>
                         </div>
@@ -67,7 +67,7 @@ const Page = () => {
                             <p className='text-gray-500'>
 
                                 Don't have an account ?{" "}
-                                <Link href={'/zbackend/login'} className='text-orange cursor-pointer'>
+                                <Link href={'/zbackend/signup'} className='text-orange cursor-pointer'>
                                     Register Now
                                 </Link>
                             </p>

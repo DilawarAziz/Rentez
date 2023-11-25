@@ -10,7 +10,7 @@ function HorizontalCard() {
                         Hardware
                     </p>
                 </div>
-                <h1 className='lg:text-2xl text-sm font-bold'>
+                <h1 className='lg:text-2xl text-sm font-bold break-all'>
                     Sed ut perspiciatis unde omnis iste natus
                     atem accusantium
                 </h1>
@@ -18,16 +18,25 @@ function HorizontalCard() {
                 <p className='text-gray-400 text-sm'>
                     3699 Red Bud Lane, Rochelle Park
                 </p>
-                <p className='text-gray-400 text-sm'>
-                    3 Mints ago
-                </p>
-            </div>
-            <div className='flex flex-col justify-between p-2'>
-                <div className='text-gray-400 text-sm '>
-                    <p className='text-end'>
+                <div className='flex gap-2'>
+                    <p className='text-gray-400 text-sm'>
+                        3 Mints ago
+                    </p>
+                    <p className='text-end sm:hidden block text-gray-400 text-sm'>
                         3.8
                     </p>
-                    <p >
+                    <p className='break-all sm:hidden block text-gray-400 text-sm'>
+                        (349Reviews)
+                    </p>
+
+                </div>
+            </div>
+            <div className='sm:flex flex-col justify-between hidden pl-0 p-2'>
+                <div className='text-gray-400 text-sm '>
+                    <p className='text-end text-gray-400'>
+                        3.8
+                    </p>
+                    <p className='break-all text-sm text-gray-400'>
                         (349Reviews)
                     </p>
                 </div>

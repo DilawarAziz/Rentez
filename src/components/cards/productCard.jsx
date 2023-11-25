@@ -8,13 +8,13 @@ function ProductCard() {
                 <h1 className='  text-sm text-gray-400'>
                     3 min ago
                 </h1>
-                <h1 className='text-lg font-bold'>
+                <h1 className='text-sm sm:text-lg font-bold'>
                     Sed ut perspiciatis unde omnis
                 </h1>
-                <h1 className='text-orange text-xl font-bold'>
+                <h1 className='text-orange text-sm sm:text-xl font-bold'>
                     AED 685
                 </h1>
-                <p className='text-gray-400'>
+                <p className='text-gray-400 text-sm'>
                     3699 Red Bud Lane, Rochelle Park
                 </p>
             </div>

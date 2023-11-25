@@ -33,7 +33,7 @@ function SubCategories() {
                     ))}
                 </div>
             </div>
-            <div className='w-full bg-white py-12'>
+            <div className='w-full bg-white py-2 sm:py-12'>
                 <div className='max-w-screen-xl mx-auto py-8 flex flex-col md:grid grid-cols-8 gap-6 px-4 xl:px-0'>
                     <div className='col-span-2 space-y-6'>
                         <div>

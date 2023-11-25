@@ -10,7 +10,7 @@ function Page() {
         <main>
             <Header />
             <div className='bg-black bg-opacity-10'>
-                <div className='max-w-screen-xl mx-auto py-12 p-4 xl:p-0'>
+                <div className='max-w-screen-xl mx-auto py-12 px-4 xl:px-0'>
                     <div>
                         <Heading type={"heading"} >
                             My Rental Request Cart

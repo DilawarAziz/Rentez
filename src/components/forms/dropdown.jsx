@@ -34,7 +34,7 @@ const Dropdown = ({ title, className, drophover, options, onChange, error, style
             <button
                 id="dropdownDefaultButton"
                 data-dropdown-toggle="dropdown"
-                className={`rounded-full bg-white text-gray-500 font-semibold justify-between w-full text-sm px-4 py-2.5 text-center inline-flex items-center ${styleButton}`}
+                className={`rounded-full bg-white text-gray-500 font-semibold justify-between w-full !text-sm md:!text-lg px-4 py-2.5 text-center inline-flex items-center ${styleButton}`}
                 type="button"
             >
                 {selectedOption ? selectedOption : title}

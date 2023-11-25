@@ -7,7 +7,7 @@ function Page() {
     return (
         <main>
             <Header />
-            <div className='max-w-screen-xl mx-auto py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 xl:p-0'>
+            <div className='max-w-screen-xl mx-auto py-4 sm:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  px-4 xl:px-0'>
                 <div>
                     <div className="flex items-center gap-6">
                         <div className="inline-flex items-center mr-3 text-sm text-gray-900  font-semibold">
@@ -16,7 +16,6 @@ function Page() {
                         <div>
                             <h1 className='font-bold text-base md:text-xl'> Michael Gough</h1>
                             <Image src={'/icons/rating.svg'} sizes='100vw' height={100} width={100} alt={'icon'} />
-
                         </div>
                     </div>
                     <div className='flex flex-col space-y-8 w-full mt-12 p-4 shadow-md rounded-xl'>

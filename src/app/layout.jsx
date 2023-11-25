@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       </body>
     </html>
   )

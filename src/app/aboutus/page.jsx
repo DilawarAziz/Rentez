@@ -21,7 +21,7 @@ function Aboutus() {
                     <h1 className='text-3xl font-bold'>
                         About Rent EZ
                     </h1>
-                    <p className='text-sm md:text-title-xsm'>
+                    <p className='text-sm lg:text-title-xsm'>
                         Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                         fugiat pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -29,7 +29,7 @@ function Aboutus() {
                         amet, consectetur adipiscing elit.
 
                     </p>
-                    <p className='text-sm md:text-title-xsm'>
+                    <p className='text-sm lg:text-title-xsm'>
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -61,17 +61,17 @@ function Aboutus() {
                 </div>
             </div>
             <div className='bg-[#000000] bg-opacity-5 '>
-                <div className='max-w-screen-xl mx-auto grid grid-cols-2 '>
-                    <div className='text-black z-10 flex flex-col justify-center s text-center space-y-20 pr-[100px]'>
-                        <h1 className='text-4xl font-bold'>
-                            <p className='mb-6'>
+                <div className='max-w-screen-xl mx-auto grid sm:grid-cols-2 grid-cols-1'>
+                    <div className='text-black px-4 py-4 sm:py-0 z-10 flex flex-col justify-center space-y-2   md:space-y-4 lg:space-y-10 '>
+                        <div className=' font-bold '>
+                            <Heading type={'heading'} className='sm:mb-6 '>
                                 Get the app.
-                            </p>
-                            <p>
+                            </Heading>
+                            <p className='text-xl'>
                                 Sell or buy. Almost anything.
                             </p>
-                        </h1>
-                        <div className='flex gap-10 '>
+                        </div>
+                        <div className='flex gap-10 w-[50%] '>
                             <Image src={'/images/appstore.png'} width={0} height={0} sizes='100vw' className='w-full' />
                             <Image src={'/images/play-04142023-badge 1 (1).png'} width={0} height={0} sizes='100vw' className='w-full' />
                         </div>

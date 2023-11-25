@@ -26,10 +26,8 @@ const page = () => {
         <main>
             <Header />
             <div className=" mx-auto mt-8 max-w-[1500px]  min-h-screen relative flex items-center justify-around py-8 px-4 sm:px-6 lg:px-8">
-                <div className='w-[50%] items-center justify-center lg:block hidden'>
-                    <Image src={'/backendimages/signup.png'} width={0} height={0} sizes='100vw' className='w-full' alt='authlock' />
-                </div>
-                <div className="lg:w-[35%] md:w-[50%] w-[90%] mx-auto  space-y-8">
+
+                <div className="lg:w-[45%] md:w-[60%] w-[90%] mx-auto  space-y-8">
                     <div>
                         <h2 className="mt-4 text-start text-4xl font-bold font-poppin uppercase ">
                             Sign up
@@ -74,7 +72,7 @@ const page = () => {
                         <div>
                             <TextFeild
                                 name={'cpassword'}
-                                inputType={"cpassword"}
+                                inputType={"password"}
                                 label={'Confirm Password'}
                                 register={register}
                                 error={errors.email?.message}
@@ -91,12 +89,12 @@ const page = () => {
                             <p className='text-gray-500'>
                                 Or signup using social networks
                             </p>
-                            <div className='grid grid-cols-2 gap-2 mt-2'>
-                                <button type='button' className='hover:bg-[white] flex items-center justify-center gap-2 px-4 py-2 text-gray-600 bg-gray-300 rounded-md sm:w-auto'>
+                            <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2'>
+                                <button type='button' className='hover:bg-[#e9cfcf] text-sm flex items-center justify-center gap-2 px-4 py-2 text-gray-600 bg-gray-300 rounded-md sm:w-auto'>
                                     <Image src={'/backendimages/googlelogo.svg'} width={20} height={20} alt='' />
                                     Sign up with Google
                                 </button>
-                                <button type='button' className='hover:bg-[white] flex items-center justify-center gap-2 px-4 py-2 text-gray-600 bg-gray-300 rounded-md sm:w-auto'>
+                                <button type='button' className='hover:bg-[#e9cfcf] flex text-sm items-center justify-center gap-2 px-4 py-2 text-gray-600 bg-gray-300 rounded-md sm:w-auto'>
                                     <Image src={'/backendimages/googlelogo.svg'} width={20} height={20} alt='' />
                                     Sign up with Google
                                 </button>
@@ -111,6 +109,9 @@ const page = () => {
                             </p>
                         </div>
                     </form>
+                </div>
+                <div className='w-[50%] items-center justify-center rounded-xl overflow-hidden lg:block hidden'>
+                    <Image src={'/backendimages/signup.png'} width={0} height={0} sizes='100vw' className='w-full' alt='authlock' />
                 </div>
                 {/* <ToastContainer /> */}
             </div>
