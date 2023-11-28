@@ -28,7 +28,7 @@ function Page() {
                         </Button>
                     </div>
                     {[1, 3, 4, 5].map((items, index) => (
-                        <HorizontalCard />
+                        <HorizontalCard key={index} />
                     ))}
                 </div>
             </div>

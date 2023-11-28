@@ -7,7 +7,7 @@ function CardsHeading({ heading, link }) {
             <Heading type={'subheading'} className='lg:text-3xl '>
                 {heading}
             </Heading>
-            <Heading type={'paragraph'} className='text-orange  cursor-pointer'>
+            <Heading type={'paragraph'} className='text-orange font-semibold hover:underline transition-all cursor-pointer'>
                 {link}
             </Heading>
         </div>

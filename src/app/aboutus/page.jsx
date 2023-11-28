@@ -54,8 +54,8 @@ function Aboutus() {
                         </Heading>
                     </div>
                     <div className='grid sm:grid-cols-3 grid-cols-1 gap-4'>
-                        {[3, 5, 7,].map(() => (
-                            <AboutUsCard className={'bg-'} />
+                        {[3, 5, 7,].map((items, index) => (
+                            <AboutUsCard key={index} className={'bg-'} />
                         ))}
                     </div>
                 </div>

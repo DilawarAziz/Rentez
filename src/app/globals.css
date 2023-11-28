@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cool-link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FF5C00;
+    transition: width .3s;
+}
+
+.navlink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    color: #25AAE1;
+    background: #25AAE1;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    /* //transition: width .3s; */
+}

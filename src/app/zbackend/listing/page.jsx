@@ -104,7 +104,7 @@ function Page() {
                                 </label>
                                 <div className='grid lg:grid-cols-4 grid-cols-2 gap-4'>
                                     {[1, 2, 3, 4, 5, 6, 7, 8].map((items, index) =>
-                                        <ImageInput className={'h-[150px]'} selectedImage={selectedImage} handleImageClick={handleImageClick} handleFileChange={handleFileChange} fileInputRef={fileInputRef} />
+                                        <ImageInput key={index} className={'h-[150px]'} selectedImage={selectedImage} handleImageClick={handleImageClick} handleFileChange={handleFileChange} fileInputRef={fileInputRef} />
                                     )}
                                 </div>
                             </div>

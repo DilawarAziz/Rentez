@@ -14,9 +14,9 @@ function Header() {
     };
     return (
         <div className='w-full bg-white'>
-            <div className='max-w-[1600px] mx-auto md:grid flex flex-wrap justify-between md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4 p-4 items-center'>
+            <div className='max-w-[1600px] mx-auto md:grid flex flex-wrap justify-between md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-2 p-4 items-center'>
                 <Image src={'/logos/mainlogo.png'} width={0} height={0} sizes='100vw' className='w-[100px] md:w-[150px]' />
-                <DropdownMenu title={'Country'} className={'rounded-full hidden md:block'} />
+                <DropdownMenu title={'Country'} className={'rounded-full !border-gray-200 !py-0 hidden md:block'} styleButton={"!py-1.5 !text-normal !px-2 !flex-row-reverse"} />
                 <div className='col-span-4 hidden xl:block'>
                     <Searchinput />
                 </div>
@@ -27,7 +27,7 @@ function Header() {
                     </p>
                 </div>
                 <Button className={'!rounded-full text-center !w-full bg-black hidden md:block'}>Sell</Button>
-                <DropdownMenu title={'Indonesia'} className={'rounded-full hidden md:block'} />
+                <DropdownMenu title={'Indonesia'} className={'rounded-full !border-gray-200  hidden md:block'} styleButton={"!py-1.5 !px-2 !text-normal"} />
                 <button
                     type="button"
                     className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none  "

@@ -30,10 +30,10 @@ export default function Home() {
       <div className='relative'>
         <div className='relative bg-orange'>
           <div className='max-w-screen-xl mx-auto sm:grid sm:items-end flex flex-col  grid-cols-2 px-4 xl:px-0'>
-            <div className='text-white z-10 py-10 flex flex-col justify-center   text-center space-y-5 lg:space-y-10 '>
+            <div className='text-white  z-[2] py-10 flex flex-col justify-center   text-center space-y-5 lg:space-y-10 '>
               <div className='w-full flex flex-col items-start'>
                 <Heading type={'heading'} className='lg:mb-6 '>
-                  Don't buy it,
+                  Don&apos;t buy it,
                 </Heading>
                 <Heading type={'heading'} className=' !text-center w-full'>
                   just rent it!
@@ -53,28 +53,28 @@ export default function Home() {
         </div>
         <div className='bg-[#000000]  bg-opacity-5 '>
           <div className='max-w-screen-xl mx-auto  py-3 md:py-6  px-4 xl:px-0'>
-            <CardsHeading heading={"Categories"} link={"View"} />
+            <CardsHeading heading={"Categories"} link={"View All"} />
             <div className='grid lg:grid-cols-6 grid-cols-2 sm:grid-cols-3 gap-4 justify-between '>
-              {[3, 5, 6, 7, 3, 89].map(() => (
-                <CategoriesCard />
+              {[3, 5, 6, 7, 3, 89].map((items, index) => (
+                <CategoriesCard key={index} />
               ))}
             </div>
           </div>
         </div>
         <div className='max-w-screen-xl mx-auto md:py-20 py-6 px-4 xl:px-0'>
-          <CardsHeading heading={"Categories"} link={"View"} />
+          <CardsHeading heading={"Categories"} link={"View All"} />
           <div className='grid lg:grid-cols-4  grid-cols-2 gap-4'>
-            {[3, 5, 6, 7,].map(() => (
-              <ProductCard />
+            {[3, 5, 6, 7,].map((items, index) => (
+              <ProductCard key={index} />
             ))}
           </div>
         </div>
         <div className='bg-[#000000] bg-opacity-5 '>
           <div className='max-w-screen-xl mx-auto md:py-20 py-6 px-4 xl:px-0 '>
-            <CardsHeading heading={"Featured Listings"} link={"View"} />
+            <CardsHeading heading={"Featured Listings"} link={"View All"} />
             <div className='grid lg:grid-cols-4 grid-cols-2 gap-4'>
-              {[3, 5, 6, 4, 6, 6, 7, 7, 4, 3, 2, 7,].map(() => (
-                <ProductCard />
+              {[3, 5, 6, 4, 6, 6, 7, 7, 4, 3, 2, 7,].map((items, index) => (
+                <ProductCard key={index} />
               ))}
             </div>
           </div>
@@ -86,8 +86,8 @@ export default function Home() {
             </Heading>
           </div>
           <div className='grid sm:grid-cols-3 grid-cols-1 gap-4'>
-            {[3, 5, 7,].map(() => (
-              <AboutUsCard />
+            {[3, 5, 7,].map((items, index) => (
+              <AboutUsCard key={index} />
             ))}
           </div>
         </div>

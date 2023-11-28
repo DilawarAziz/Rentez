@@ -17,8 +17,8 @@ function Page() {
                         </Heading>
                     </div>
                     <div className='bg-white rounded-xl  overflow-auto  p-10 space-y-12  flex flex-col gap-8 my-12  '>
-                        {[1, 2].map(() => (
-                            <div className='flex flex-wrap justify-between items-center'>
+                        {[1, 2].map((items, index) => (
+                            <div key={index} className='flex flex-wrap justify-between items-center'>
                                 <Image src={'/backendimages/close_ring.svg'} sizes='100vw' height={40} width={40} alt={'icon'} />
                                 <div className='flex items-center justify-center gap-2'>
                                     <Image src={'/backendimages/pricing.png'} sizes='100vw' height={100} width={100} alt={'icon'} />

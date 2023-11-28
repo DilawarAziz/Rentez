@@ -12,28 +12,27 @@ function Footer() {
                         </div>
                         <div className=' footer-col flex flex-col  space-y-6  text-sm'>
                             <h1 className='  font-bold text-md    text-lg' >Quick Links</h1>
-                            <Link href='/zbackend/chatlist'>Become a Seller</Link>
-                            <Link href='/aboutus'> About us</Link>
-                            <Link href='/zbackend/pricing'> Pricing </Link>
-                            <Link href='/subcategories'>Categories</Link>
+                            <Link href='/zbackend/chatlist' className='cool-link'>Become a Seller</Link>
+                            <Link href='/aboutus' className='cool-link'> About us</Link>
+                            <Link href='/zbackend/pricing' className='cool-link'> Pricing </Link>
+                            <Link href='/subcategories' className='cool-link'>Categories</Link>
                         </div>
                         <div className=' footer-col  flex flex-col space-y-6  text-sm'>
                             <h1 className='  font-bold text-md    text-lg' >Categories</h1>
-                            <Link href='/zbackend/login'>Featured Listings </Link>
-                            <Link href='/zbackend/createorder/account'>Top Listings</Link>
-                            <Link href='/profile'> Fresh Recommendations</Link>
+                            <Link href='/zbackend/login' className='cool-link'>Featured Listings </Link>
+                            <Link href='/zbackend/createorder/account' className='cool-link'>Top Listings</Link>
+                            <Link href='/profile' className='cool-link'> Fresh Recommendations</Link>
                         </div>
                         <div className='footer-col flex flex-col space-y-6  text-sm'>
                             <h1 className='font-bold text-md    text-lg' >Support</h1>
-                            <Link href={'/addsdetail'}>How it Works </Link>
-                            <Link href={'/faqs'}>
+                            <Link href={'/addsdetail'} className='cool-link'>How it Works </Link>
+                            <Link href={'/faqs'} className='cool-link'>
                                 FAQs
                             </Link>
-                            <Link href={'/termsandconditions'}>Terms & Conditions</Link>
-
-                            <Link href={'/privacy-policy'}>Privacy Policy</Link>
-                            <Link href={'/contactus'}>Contact Us</Link >
-                            <Link href={'/zbackend/listing'}>Careers</Link >
+                            <Link href={'/termsandconditions'} className='cool-link'>Terms & Conditions</Link>
+                            <Link href={'/privacy-policy'} className='cool-link'>Privacy Policy</Link>
+                            <Link href={'/contactus'} className='cool-link'>Contact Us</Link >
+                            <Link href={'/zbackend/listing'} className='cool-link'>Careers</Link >
                         </div>
                         <div className=' footer-col flex flex-col space-y-  text-sm'>
                             <h1 className='font-bold text-md    text-lg ' >Email</h1>
@@ -59,18 +58,17 @@ function Footer() {
                                     Search
                                 </label>
                                 <div className="relative ">
-
                                     <input
                                         type="search"
                                         id="search"
-                                        className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full  focus:ring-blue-500 focus:lue-500 "
-                                        placeholder="Search"
+                                        className="block w-full p-4 pl-5 text-sm text-gray-900 border-2 border-gray-200 rounded-full  focus:ring-blue-500 focus:lue-500 "
+                                        placeholder="Enter your email"
                                     />
                                     <button
                                         type="submit"
                                         className="  absolute right-2.5 bottom-2.5 bg-orange rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-4 py-2 "
                                     >
-                                        Search
+                                        Sign up
                                     </button>
                                 </div>
                             </form>
@@ -83,17 +81,14 @@ function Footer() {
                         Copyright 2023, All rights reserved.
                     </h1>
                     <div className='flex gap-4'>
-                        {[1, 4, 5, 6].map(() => (
-                            <div className='bg-white p-3 rounded-full'>
+                        {[1, 4, 5, 6].map((items, index) => (
+                            <div key={index} className='bg-white p-3 hover:bg-gray-200 cursor-pointer rounded-full'>
                                 <Image src={'/logos/x.svg'} sizes='100vw' width={20} height={20} className='' />
                             </div>
-                        ))
-                        }
+                        ))}
                     </div>
                 </div>
             </div >
-
-
         </>
     )
 }

@@ -160,13 +160,12 @@ function Page() {
                 <div className='max-w-screen-xl mx-auto my-20 p-6'>
                     <CardsHeading heading={"Categories"} link={"View All"} />
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4'>
-                        {[3, 5, 6, 7,].map(() => (
-                            <ProductCard />
+                        {[3, 5, 6, 7,].map((items, index) => (
+                            <ProductCard key={index} />
                         ))}
                     </div>
                 </div>
             </div>
-
             <Footer />
         </main>
     )

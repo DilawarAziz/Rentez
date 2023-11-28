@@ -66,7 +66,7 @@ const Page = () => {
                         <div>
                             <p className='text-gray-500'>
 
-                                Don't have an account ?{" "}
+                                Don`&apos;t have an account ?{" "}
                                 <Link href={'/zbackend/signup'} className='text-orange cursor-pointer'>
                                     Register Now
                                 </Link>

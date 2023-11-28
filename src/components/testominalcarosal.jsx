@@ -24,7 +24,7 @@ function Testominalcarosal() {
                 >
                     <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-transparent border-2 border-primary dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg
-                            className="w-2 h-2 text-white dark:text-gray-800"
+                            className="w-2 h-2 text-black "
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -44,7 +44,7 @@ function Testominalcarosal() {
                 >
                     <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-transparent border-2 border-primary dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg
-                            className="w-2 h-2 text-white dark:text-gray-800"
+                            className="w-2 h-2 text-black "
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"

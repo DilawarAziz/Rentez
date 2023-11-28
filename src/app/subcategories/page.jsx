@@ -19,8 +19,8 @@ function SubCategories() {
             <div className='max-w-screen-xl mx-auto py-8 px-4 xl:px-0'>
                 <CardsHeading heading={'Categories '} />
                 <div className='grid lg:grid-cols-6 grid-cols-2 sm:grid-cols-3 gap-4 justify-between '>
-                    {[3, 5, 6, 7, 3, 89].map(() => (
-                        <CategoriesCard />
+                    {[3, 5, 6, 7, 3, 89].map((items, index) => (
+                        <CategoriesCard key={index} />
                     ))}
                 </div>
                 <div className='flex flex-wrap  gap-4 mt-12'>

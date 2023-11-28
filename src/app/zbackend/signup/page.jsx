@@ -8,7 +8,7 @@ import TextFeild from '@/components/forms/TextFeild';
 import Header from '@/components/header/header';
 
 
-const page = () => {
+const Page = () => {
     const onSubmit = (data) => console.log(data);
     const { register, handleSubmit, formState: { errors } } = useForm({
         defaultValues: {
@@ -120,4 +120,4 @@ const page = () => {
 }
 
 
-export default page
+export default Page
